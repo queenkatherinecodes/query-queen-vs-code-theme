@@ -1,0 +1,21 @@
+{
+  "name": "query-queen",
+  "displayName": "query queen",
+  "description": "cute brown and pink shades for queens only",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Query Queen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Query Queen-color-theme.json"
+      }
+    ]
+  }
+}
