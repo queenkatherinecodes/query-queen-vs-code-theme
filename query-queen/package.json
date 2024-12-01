@@ -14,7 +14,7 @@
       {
         "label": "Query Queen",
         "uiTheme": "vs-dark",
-        "path": "./themes/Query Queen-color-theme.json"
+        "path": "./themes/query-queen-color-theme.json"
       }
     ]
   }

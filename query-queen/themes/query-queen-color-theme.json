@@ -1,0 +1,84 @@
+{
+    "name": "Query Queen Theme",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#2A2118",          // Rich latte brown
+        "editor.foreground": "#FFE4E1",          // Soft pink
+        "activityBar.background": "#1E1711",     // Darker brown
+        "sideBar.background": "#241B13",         // Medium dark brown
+        "statusBar.background": "#3D2B1F",       // Deep mocha
+        "titleBar.activeBackground": "#1E1711",  // Darker brown
+        "tab.activeBackground": "#2A2118",       // Match editor
+        "tab.inactiveBackground": "#241B13",     // Slightly darker
+        
+        // Editor highlighting and selection
+        "editor.selectionBackground": "#FF69B440",    // Light pink with opacity
+        "editor.lineHighlightBackground": "#32281E",  // Slightly lighter brown
+        "editor.wordHighlightBackground": "#FF69B420",// Very light pink
+        "editorCursor.foreground": "#FFB6C1",        // Light pink
+        "editorWhitespace.foreground": "#3D2B1F",    // Deep mocha
+        
+        // Sidebar and lists
+        "list.activeSelectionBackground": "#FF69B440",
+        "list.hoverBackground": "#32281E",
+        "sideBarSectionHeader.background": "#1E1711"
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": ["comment", "punctuation.definition.comment"],
+            "settings": {
+                "foreground": "#D8BFD8"  // Thistle pink
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": ["string", "string.quoted"],
+            "settings": {
+                "foreground": "#FFB6C1"  // Light pink
+            }
+        },
+        {
+            "name": "Keywords",
+            "scope": ["keyword", "storage.type", "storage.modifier"],
+            "settings": {
+                "foreground": "#FF69B4"  // Hot pink
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": ["entity.name.function", "support.function"],
+            "settings": {
+                "foreground": "#DDA0DD"  // Plum pink
+            }
+        },
+        {
+            "name": "Variables",
+            "scope": ["variable", "variable.other"],
+            "settings": {
+                "foreground": "#FFC0CB"  // Pink
+            }
+        },
+        {
+            "name": "Classes/Types",
+            "scope": ["entity.name.type", "entity.name.class", "support.type"],
+            "settings": {
+                "foreground": "#FF1493"  // Deep pink
+            }
+        },
+        {
+            "name": "Numbers",
+            "scope": ["constant.numeric"],
+            "settings": {
+                "foreground": "#FFE4E1"  // Misty rose
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": ["keyword.operator"],
+            "settings": {
+                "foreground": "#FFB6C1"  // Light pink
+            }
+        }
+    ]
+}
