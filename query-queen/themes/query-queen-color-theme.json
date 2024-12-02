@@ -3,49 +3,77 @@
     "type": "dark",
     "colors": {
         // Main editor colors
-        "editor.background": "#362F25",          // Lighter latte brown
+        "editor.background": "#3D3529",          // Even lighter latte brown
         "editor.foreground": "#FFE4E1",          // Soft pink
-        "activityBar.background": "#2A2319",     // Lighter dark brown
-        "sideBar.background": "#2E271D",         // Lighter medium brown
-        "statusBar.background": "#453B2F",       // Lighter mocha
-        "titleBar.activeBackground": "#2A2319",  // Lighter dark brown
-        "tab.activeBackground": "#362F25",       // Match editor
-        "tab.inactiveBackground": "#2E271D",     // Slightly darker
+        "activityBar.background": "#332B20",     // Lighter dark brown
+        "sideBar.background": "#362F25",         // Lighter medium brown
+        "statusBar.background": "#4D4236",       // Lighter mocha
+        "titleBar.activeBackground": "#332B20",  // Lighter dark brown
+        "tab.activeBackground": "#3D3529",       // Match editor
+        "tab.inactiveBackground": "#362F25",     // Slightly darker
 
         // Editor highlighting and selection
-        "editor.selectionBackground": "#FF69B440",    // Light pink with opacity
-        "editor.lineHighlightBackground": "#3D3529",  // Slightly lighter brown
-        "editor.wordHighlightBackground": "#FF69B420",// Very light pink
+        "editor.selectionBackground": "#FF69B460",    // More visible pink with opacity
+        "editor.lineHighlightBackground": "#453B2F",  // Slightly lighter brown
+        "editor.wordHighlightBackground": "#FF69B430",// More visible light pink
         "editorCursor.foreground": "#FFB6C1",        // Light pink
-        "editorWhitespace.foreground": "#453B2F",    // Lighter mocha
+        "editorWhitespace.foreground": "#4D4236",    // Lighter mocha
+        "editor.findMatchBackground": "#FF69B450",    // Pink for find matches
+        "editor.findMatchHighlightBackground": "#FF69B430",
 
         // Terminal colors
-        "terminal.background": "#362F25",        // Match editor background
+        "terminal.background": "#3D3529",        // Match editor background
         "terminal.foreground": "#FFE4E1",        // Soft pink
         "terminalCursor.foreground": "#FFB6C1",  // Light pink
-        "terminal.selectionBackground": "#FF69B440",
+        "terminal.selectionBackground": "#FF69B460",
         "terminal.ansiBlue": "#DDA0DD",         // Plum pink
         "terminal.ansiBrightBlue": "#FF69B4",   // Hot pink
+        "terminal.ansiMagenta": "#FF69B4",      // Hot pink
+        "terminal.ansiBrightMagenta": "#FFB6C1", // Light pink
+        "terminal.ansiRed": "#FF1493",          // Deep pink
+        "terminal.ansiBrightRed": "#FF69B4",    // Hot pink
         
         // Sidebar and lists
-        "list.activeSelectionBackground": "#FF69B440",
-        "list.hoverBackground": "#3D3529",
-        "sideBarSectionHeader.background": "#2A2319",
+        "list.activeSelectionBackground": "#FF69B460",
+        "list.hoverBackground": "#453B2F",
+        "list.inactiveSelectionBackground": "#FF69B440",
+        "list.highlightForeground": "#FF69B4",
+        "sideBarSectionHeader.background": "#332B20",
+        "sideBarTitle.foreground": "#FFB6C1",
         
         // Additional UI elements
         "focusBorder": "#FF69B4",              // Hot pink for focus borders
         "editorLink.activeForeground": "#FF69B4",
         "textLink.foreground": "#FF69B4",
         "textLink.activeForeground": "#DDA0DD",
-        "editorBracketMatch.background": "#FF69B440",
-        "editorBracketMatch.border": "#FF69B4"
+        "editorBracketMatch.background": "#FF69B460",
+        "editorBracketMatch.border": "#FF69B4",
+        
+        // New UI elements
+        "activityBarBadge.background": "#FF1493",
+        "activityBarBadge.foreground": "#FFFFFF",
+        "breadcrumb.foreground": "#FFE4E1",
+        "breadcrumb.focusForeground": "#FF69B4",
+        "editorGroupHeader.tabsBackground": "#332B20",
+        "editorIndentGuide.background": "#4D4236",
+        "editorIndentGuide.activeBackground": "#FF69B440",
+        "panelTitle.activeBorder": "#FF69B4",
+        "panelTitle.activeForeground": "#FFB6C1",
+        "progressBar.background": "#FF69B4",
+        "scrollbarSlider.background": "#FF69B440",
+        "scrollbarSlider.hoverBackground": "#FF69B460",
+        "scrollbarSlider.activeBackground": "#FF69B480",
+        "settings.headerForeground": "#FFB6C1",
+        "settings.modifiedItemIndicator": "#FF69B4",
+        "welcomePage.buttonBackground": "#FF69B440",
+        "welcomePage.buttonHoverBackground": "#FF69B460"
     },
     "tokenColors": [
         {
             "name": "Comments",
             "scope": ["comment", "punctuation.definition.comment"],
             "settings": {
-                "foreground": "#D8BFD8"  // Thistle pink
+                "foreground": "#DBB7DB"  // Lighter thistle pink
             }
         },
         {
@@ -101,6 +129,31 @@
             ],
             "settings": {
                 "foreground": "#FFB6C1"  // Light pink
+            }
+        },
+        {
+            "name": "Decorators",
+            "scope": [
+                "entity.name.decorator",
+                "meta.decorator punctuation.decorator",
+                "meta.decorator variable.other.readwrite"
+            ],
+            "settings": {
+                "foreground": "#FF69B4"  // Hot pink
+            }
+        },
+        {
+            "name": "Property Names",
+            "scope": ["support.type.property-name", "meta.object-literal.key"],
+            "settings": {
+                "foreground": "#FFB6C1"  // Light pink
+            }
+        },
+        {
+            "name": "Built-in Constants",
+            "scope": ["constant.language", "support.constant"],
+            "settings": {
+                "foreground": "#FF1493"  // Deep pink
             }
         }
     ]
