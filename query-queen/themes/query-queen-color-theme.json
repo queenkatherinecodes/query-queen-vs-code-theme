@@ -65,8 +65,6 @@
         "scrollbarSlider.activeBackground": "#FF69B480",
         "settings.headerForeground": "#FFB6C1",
         "settings.modifiedItemIndicator": "#FF69B4",
-        "welcomePage.buttonBackground": "#FF69B440",
-        "welcomePage.buttonHoverBackground": "#FF69B460"
     },
     "tokenColors": [
         {
