@@ -42,7 +42,7 @@
         "sideBarTitle.foreground": "#FFB6C1",
         
         // Additional UI elements
-        "focusBorder": "#FF69B4",              // Hot pink for focus borders
+        "focusBorder": "#FF69B4",              
         "editorLink.activeForeground": "#FF69B4",
         "textLink.foreground": "#FF69B4",
         "textLink.activeForeground": "#DDA0DD",
@@ -64,14 +64,15 @@
         "scrollbarSlider.hoverBackground": "#FF69B460",
         "scrollbarSlider.activeBackground": "#FF69B480",
         "settings.headerForeground": "#FFB6C1",
-        "settings.modifiedItemIndicator": "#FF69B4",
+        "settings.modifiedItemIndicator": "#FF69B4"
     },
     "tokenColors": [
         {
             "name": "Comments",
             "scope": ["comment", "punctuation.definition.comment"],
             "settings": {
-                "foreground": "#DBB7DB"  // Lighter thistle pink
+                "foreground": "#DBB7DB",  // Lighter thistle pink
+                "fontStyle": "italic"
             }
         },
         {
@@ -153,6 +154,44 @@
             "settings": {
                 "foreground": "#FF1493"  // Deep pink
             }
+        },
+        {
+            "name": "Markdown inline raw",
+            "scope": [
+                "text.html.markdown markup.inline.raw"
+            ],
+            "settings": {
+                "foreground": "#FF69B4"  // Hot pink
+            }
+        },
+        {
+            "name": "Markdown fenced code punctuation",
+            "scope": [
+                "text.html.markdown punctuation.definition.markdown"
+            ],
+            "settings": {
+                "foreground": "#DDA0DD"  // Plum pink
+            }
+        },
+        {
+            "name": "Markdown fenced code language",
+            "scope": [
+                "text.html.markdown fenced_code.block.language"
+            ],
+            "settings": {
+                "foreground": "#FF1493"  // Deep pink
+            }
+        },
+        {
+            "name": "Markdown quote",
+            "scope": [
+                "markup.quote"
+            ],
+            "settings": {
+                "foreground": "#FFB6C1",  // Light pink
+                "fontStyle": "italic"
+            }
         }
-    ]
+    ],
+    "semanticHighlighting": true
 }
